@@ -1,7 +1,7 @@
 #include <esp_now.h>
 #include <esp_wifi.h>
 #include <M5Cardputer.h>
-#include <M5_LoRa_E220_JP.h>
+#include <M5_LoRa_E220.h>
 #include <SD.h>
 #include <WiFi.h>
 
@@ -16,7 +16,7 @@
 
 uint8_t messageNonce = 0;
 
-LoRa_E220_JP lora;
+LoRa_E220 lora;
 struct LoRaConfigItem_t loraConfig;
 struct RecvFrame_t loraFrame;
 TaskHandle_t loraReceiveTaskHandle = NULL;
